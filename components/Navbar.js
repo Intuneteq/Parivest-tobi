@@ -1,0 +1,53 @@
+import React, { useState } from "react";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import { BiRefresh } from "react-icons/bi";
+import { IoMdNotificationsOutline } from "react-icons/io";
+
+import Logo from "../public/Logo.svg";
+import Ellipse from "../public/Ellipse.svg";
+import user from "../public/user.svg";
+import {useAppProvider} from "../context/AppProvider";
+
+const Navbar = () => {
+  const router = useRouter();
+  const [displayName, setDisplayName] = useState("user");
+  const {slugParam} = useAppProvider();
+  // console.log('navbar', router.pathname);
+  // console.log('query', router.asPath);
+  // console.log('truthy', router.asPath == `users/${slugParam}`);
+  
+  // console.log('truthy', router.pathname === 'users/[slug]');
+
+  if(router.asPath === 'users/[slug]') setDisplayName("userProfile")
+  return (
+    <div className="app__flex-2 nav__container">
+      <div className="app__flex-3">
+        <Image
+          src={Logo}
+          alt="Picture of the author"
+          width={222}
+          height={38}
+          //   placeholder="blur" // Optional blur-up while loading
+        />
+        <h1>{displayName}</h1>
+      </div>
+      <div className="app__flex">
+        <BiRefresh />
+        <section className="user-notes">
+          <IoMdNotificationsOutline />
+          <div className="app__flex">
+            <Image src={Ellipse} alt="Ellipse" width={14} />
+          </div>
+        </section>
+        <section className="column-flex">
+          <h6>Ole gunnar</h6>
+          <p>Super admin</p>
+        </section>
+        <Image src={user} width={45} height={45} />
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

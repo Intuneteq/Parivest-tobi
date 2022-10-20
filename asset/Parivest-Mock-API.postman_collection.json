@@ -1,0 +1,575 @@
+{
+	"info": {
+		"_postman_id": "07d90dd1-3585-4c05-8715-12d22615daba",
+		"name": "Parivest-Mock-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16580343"
+	},
+	"item": [
+		{
+			"name": "Get All Users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Get All Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/api/v1/users",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4617"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1209-CEwYwcMKDkzGnwsOoXOJjpU4J8Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 12:28:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"data\": [\n        {\n            \"metadata\": {\n                \"total\": 1000,\n                \"page\": 1,\n                \"limit\": 20,\n                \"pages\": 50\n            },\n            \"data\": [\n                {\n                    \"_id\": \"634aa25416321247d89903b1\",\n                    \"first_name\": \"Aymer\",\n                    \"last_name\": \"Tolfrey\",\n                    \"client_id\": \"P000110\",\n                    \"email\": \"atolfrey31@earthlink.net\",\n                    \"phone\": \"08061052669\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-13T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89904ff\",\n                    \"first_name\": \"Lind\",\n                    \"last_name\": \"Bohman\",\n                    \"client_id\": \"P000277\",\n                    \"email\": \"lbohman7o@accuweather.com\",\n                    \"phone\": \"08061634526\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-13T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d899073d\",\n                    \"first_name\": \"Koressa\",\n                    \"last_name\": \"Oag\",\n                    \"client_id\": \"P000564\",\n                    \"email\": \"koagfn@dot.gov\",\n                    \"phone\": \"08067312693\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-13T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d899085b\",\n                    \"first_name\": \"Darrel\",\n                    \"last_name\": \"Maseres\",\n                    \"client_id\": \"P000707\",\n                    \"email\": \"dmaseresjm@unesco.org\",\n                    \"phone\": \"08019242049\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-13T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d8990907\",\n                    \"first_name\": \"Hedwig\",\n                    \"last_name\": \"Igonet\",\n                    \"client_id\": \"P000793\",\n                    \"email\": \"higonetm0@dagondesign.com\",\n                    \"phone\": \"08020495567\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-13T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d8990545\",\n                    \"first_name\": \"Misty\",\n                    \"last_name\": \"Farlambe\",\n                    \"client_id\": \"P000312\",\n                    \"email\": \"mfarlambe8n@wix.com\",\n                    \"phone\": \"08046639236\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-12T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d899045b\",\n                    \"first_name\": \"Orly\",\n                    \"last_name\": \"Winsborrow\",\n                    \"client_id\": \"P000195\",\n                    \"email\": \"owinsborrow5e@pagesperso-orange.fr\",\n                    \"phone\": \"08054587898\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-11T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d8990617\",\n                    \"first_name\": \"Ardyce\",\n                    \"last_name\": \"Yashunin\",\n                    \"client_id\": \"P000417\",\n                    \"email\": \"ayashuninbk@istockphoto.com\",\n                    \"phone\": \"08088859973\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-11T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d89909c3\",\n                    \"first_name\": \"Rey\",\n                    \"last_name\": \"Buddell\",\n                    \"client_id\": \"P000887\",\n                    \"email\": \"rbuddellom@linkedin.com\",\n                    \"phone\": \"08020683300\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-11T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d8990439\",\n                    \"first_name\": \"Ardeen\",\n                    \"last_name\": \"Boles\",\n                    \"client_id\": \"P000178\",\n                    \"email\": \"aboles4x@indiatimes.com\",\n                    \"phone\": \"08015464646\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-10T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d89909bd\",\n                    \"first_name\": \"Jade\",\n                    \"last_name\": \"Van Merwe\",\n                    \"client_id\": \"P000884\",\n                    \"email\": \"jvanoj@google.pl\",\n                    \"phone\": \"08019795646\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-09T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d8990a45\",\n                    \"first_name\": \"Clevie\",\n                    \"last_name\": \"Nowland\",\n                    \"client_id\": \"P000952\",\n                    \"email\": \"cnowlandqf@marketwatch.com\",\n                    \"phone\": \"08025364750\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-09T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89904b3\",\n                    \"first_name\": \"Lynne\",\n                    \"last_name\": \"Ochterlony\",\n                    \"client_id\": \"P000239\",\n                    \"email\": \"lochterlony6m@stanford.edu\",\n                    \"phone\": \"08025885134\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89904c5\",\n                    \"first_name\": \"Jerry\",\n                    \"last_name\": \"Flamank\",\n                    \"client_id\": \"P000248\",\n                    \"email\": \"jflamank6v@feedburner.com\",\n                    \"phone\": \"08006791245\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d899051b\",\n                    \"first_name\": \"Aaron\",\n                    \"last_name\": \"Durtnall\",\n                    \"client_id\": \"P000291\",\n                    \"email\": \"adurtnall82@smugmug.com\",\n                    \"phone\": \"08032271500\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89905b9\",\n                    \"first_name\": \"Web\",\n                    \"last_name\": \"Tosh\",\n                    \"client_id\": \"P000370\",\n                    \"email\": \"wtosha9@sfgate.com\",\n                    \"phone\": \"08000712589\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d89907b7\",\n                    \"first_name\": \"Morgen\",\n                    \"last_name\": \"Beveredge\",\n                    \"client_id\": \"P000625\",\n                    \"email\": \"mbeveredgehc@upenn.edu\",\n                    \"phone\": \"08083254124\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d8990969\",\n                    \"first_name\": \"Lesley\",\n                    \"last_name\": \"Arlidge\",\n                    \"client_id\": \"P000842\",\n                    \"email\": \"larlidgend@surveymonkey.com\",\n                    \"phone\": \"08079173926\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25316321247d8990397\",\n                    \"first_name\": \"Florencia\",\n                    \"last_name\": \"McCart\",\n                    \"client_id\": \"P000097\",\n                    \"email\": \"fmccart2o@bloglines.com\",\n                    \"phone\": \"08004073441\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-07T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89903bb\",\n                    \"first_name\": \"Iain\",\n                    \"last_name\": \"Adenet\",\n                    \"client_id\": \"P000115\",\n                    \"email\": \"iadenet36@linkedin.com\",\n                    \"phone\": \"08079289182\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-07T23:00:00.000Z\"\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get All Users With PageNo",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/api/v1/users?pageNo=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4617"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1209-s9Pl6/7VfKIEY0IBgqR9bCMaVUY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 12:29:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"data\": [\n        {\n            \"metadata\": {\n                \"total\": 1000,\n                \"page\": 2,\n                \"limit\": 20,\n                \"pages\": 50\n            },\n            \"data\": [\n                {\n                    \"_id\": \"634aa25416321247d89905c9\",\n                    \"first_name\": \"Tuckie\",\n                    \"last_name\": \"Dagg\",\n                    \"client_id\": \"P000378\",\n                    \"email\": \"tdaggah@github.io\",\n                    \"phone\": \"08015670737\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-07T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d89909a7\",\n                    \"first_name\": \"Jimmy\",\n                    \"last_name\": \"Chopy\",\n                    \"client_id\": \"P000873\",\n                    \"email\": \"jchopyo8@histats.com\",\n                    \"phone\": \"08048850465\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-07T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d899059f\",\n                    \"first_name\": \"Britt\",\n                    \"last_name\": \"Fitchet\",\n                    \"client_id\": \"P000357\",\n                    \"email\": \"bfitchet9w@bloglines.com\",\n                    \"phone\": \"08014443667\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-06T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d8990603\",\n                    \"first_name\": \"Jourdain\",\n                    \"last_name\": \"Lobell\",\n                    \"client_id\": \"P000407\",\n                    \"email\": \"jlobellba@meetup.com\",\n                    \"phone\": \"08088650037\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-06T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d899074d\",\n                    \"first_name\": \"Kristyn\",\n                    \"last_name\": \"Broomfield\",\n                    \"client_id\": \"P000572\",\n                    \"email\": \"kbroomfieldfv@google.ca\",\n                    \"phone\": \"08097301286\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-05T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d8990891\",\n                    \"first_name\": \"Noemi\",\n                    \"last_name\": \"Plackstone\",\n                    \"client_id\": \"P000734\",\n                    \"email\": \"nplackstonekd@howstuffworks.com\",\n                    \"phone\": \"08071881245\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-05T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d89909f5\",\n                    \"first_name\": \"Heall\",\n                    \"last_name\": \"Younie\",\n                    \"client_id\": \"P000912\",\n                    \"email\": \"hyouniepb@auda.org.au\",\n                    \"phone\": \"08087474748\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-05T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d89907d1\",\n                    \"first_name\": \"Shermie\",\n                    \"last_name\": \"Millichap\",\n                    \"client_id\": \"P000638\",\n                    \"email\": \"smillichaphp@rediff.com\",\n                    \"phone\": \"08000144896\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-04T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d899098f\",\n                    \"first_name\": \"Catha\",\n                    \"last_name\": \"Komorowski\",\n                    \"client_id\": \"P000861\",\n                    \"email\": \"ckomorowskinw@hao123.com\",\n                    \"phone\": \"08078330717\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-04T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25316321247d89902dd\",\n                    \"first_name\": \"Melina\",\n                    \"last_name\": \"Guiden\",\n                    \"client_id\": \"P000004\",\n                    \"email\": \"mguiden3@usgs.gov\",\n                    \"phone\": \"08016725236\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-03T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d8990681\",\n                    \"first_name\": \"Drucy\",\n                    \"last_name\": \"Gregine\",\n                    \"client_id\": \"P000470\",\n                    \"email\": \"dgregined1@miitbeian.gov.cn\",\n                    \"phone\": \"08072242671\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-03T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d8990801\",\n                    \"first_name\": \"Margret\",\n                    \"last_name\": \"Cattell\",\n                    \"client_id\": \"P000662\",\n                    \"email\": \"mcattellid@webmd.com\",\n                    \"phone\": \"08006693107\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-03T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25316321247d8990319\",\n                    \"first_name\": \"Northrop\",\n                    \"last_name\": \"Skedge\",\n                    \"client_id\": \"P000034\",\n                    \"email\": \"nskedgex@smh.com.au\",\n                    \"phone\": \"08022439174\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-02T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89903c9\",\n                    \"first_name\": \"Abbie\",\n                    \"last_name\": \"Swendell\",\n                    \"client_id\": \"P000122\",\n                    \"email\": \"aswendell3d@163.com\",\n                    \"phone\": \"08039031204\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-02T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89903f1\",\n                    \"first_name\": \"Daron\",\n                    \"last_name\": \"Weinmann\",\n                    \"client_id\": \"P000142\",\n                    \"email\": \"dweinmann3x@discuz.net\",\n                    \"phone\": \"08022508984\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-02T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d8990a29\",\n                    \"first_name\": \"Rita\",\n                    \"last_name\": \"Noirel\",\n                    \"client_id\": \"P000938\",\n                    \"email\": \"rnoirelq1@craigslist.org\",\n                    \"phone\": \"08035661789\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-02T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25316321247d8990365\",\n                    \"first_name\": \"Pauly\",\n                    \"last_name\": \"Newland\",\n                    \"client_id\": \"P000072\",\n                    \"email\": \"pnewland1z@vkontakte.ru\",\n                    \"phone\": \"08005348038\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-01T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d89907e7\",\n                    \"first_name\": \"Bekki\",\n                    \"last_name\": \"Harriss\",\n                    \"client_id\": \"P000649\",\n                    \"email\": \"bharrissi0@timesonline.co.uk\",\n                    \"phone\": \"08002642892\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-01T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d89909d5\",\n                    \"first_name\": \"Bennett\",\n                    \"last_name\": \"Reicherz\",\n                    \"client_id\": \"P000896\",\n                    \"email\": \"breicherzov@hostgator.com\",\n                    \"phone\": \"08051640860\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-01T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89905d5\",\n                    \"first_name\": \"Dorry\",\n                    \"last_name\": \"Quilligan\",\n                    \"client_id\": \"P000384\",\n                    \"email\": \"dquilliganan@umn.edu\",\n                    \"phone\": \"08041963970\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-30T23:00:00.000Z\"\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get All Users with pageNo and limitNo",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/api/v1/users?pageNo=2&limitNo=10",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "2"
+								},
+								{
+									"key": "limitNo",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2359"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"937-qh3b3DKLFX5im3Xb6y3sdpYKUFg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 12:30:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"data\": [\n        {\n            \"metadata\": {\n                \"total\": 1000,\n                \"page\": 2,\n                \"limit\": 10,\n                \"pages\": 100\n            },\n            \"data\": [\n                {\n                    \"_id\": \"634aa25616321247d89909bd\",\n                    \"first_name\": \"Jade\",\n                    \"last_name\": \"Van Merwe\",\n                    \"client_id\": \"P000884\",\n                    \"email\": \"jvanoj@google.pl\",\n                    \"phone\": \"08019795646\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-09T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d8990a45\",\n                    \"first_name\": \"Clevie\",\n                    \"last_name\": \"Nowland\",\n                    \"client_id\": \"P000952\",\n                    \"email\": \"cnowlandqf@marketwatch.com\",\n                    \"phone\": \"08025364750\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-09T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89904b3\",\n                    \"first_name\": \"Lynne\",\n                    \"last_name\": \"Ochterlony\",\n                    \"client_id\": \"P000239\",\n                    \"email\": \"lochterlony6m@stanford.edu\",\n                    \"phone\": \"08025885134\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89904c5\",\n                    \"first_name\": \"Jerry\",\n                    \"last_name\": \"Flamank\",\n                    \"client_id\": \"P000248\",\n                    \"email\": \"jflamank6v@feedburner.com\",\n                    \"phone\": \"08006791245\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d899051b\",\n                    \"first_name\": \"Aaron\",\n                    \"last_name\": \"Durtnall\",\n                    \"client_id\": \"P000291\",\n                    \"email\": \"adurtnall82@smugmug.com\",\n                    \"phone\": \"08032271500\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89905b9\",\n                    \"first_name\": \"Web\",\n                    \"last_name\": \"Tosh\",\n                    \"client_id\": \"P000370\",\n                    \"email\": \"wtosha9@sfgate.com\",\n                    \"phone\": \"08000712589\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25516321247d89907b7\",\n                    \"first_name\": \"Morgen\",\n                    \"last_name\": \"Beveredge\",\n                    \"client_id\": \"P000625\",\n                    \"email\": \"mbeveredgehc@upenn.edu\",\n                    \"phone\": \"08083254124\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d8990969\",\n                    \"first_name\": \"Lesley\",\n                    \"last_name\": \"Arlidge\",\n                    \"client_id\": \"P000842\",\n                    \"email\": \"larlidgend@surveymonkey.com\",\n                    \"phone\": \"08079173926\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25316321247d8990397\",\n                    \"first_name\": \"Florencia\",\n                    \"last_name\": \"McCart\",\n                    \"client_id\": \"P000097\",\n                    \"email\": \"fmccart2o@bloglines.com\",\n                    \"phone\": \"08004073441\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-07T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d89903bb\",\n                    \"first_name\": \"Iain\",\n                    \"last_name\": \"Adenet\",\n                    \"client_id\": \"P000115\",\n                    \"email\": \"iadenet36@linkedin.com\",\n                    \"phone\": \"08079289182\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-07T23:00:00.000Z\"\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get All Users fromDate to toDate",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/api/v1/users?fromDate=10/10/22&toDate=10/13/22",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "fromDate",
+									"value": "10/10/22"
+								},
+								{
+									"key": "toDate",
+									"value": "10/13/22"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1678"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"68e-SWTogmsf+bN8VqV5nx1cJCIlo+s\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 12:32:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"data\": [\n        {\n            \"metadata\": {\n                \"total\": 7,\n                \"page\": 1,\n                \"limit\": 20,\n                \"pages\": 1\n            },\n            \"data\": [\n                {\n                    \"_id\": \"634aa25416321247d8990545\",\n                    \"first_name\": \"Misty\",\n                    \"last_name\": \"Farlambe\",\n                    \"client_id\": \"P000312\",\n                    \"email\": \"mfarlambe8n@wix.com\",\n                    \"phone\": \"08046639236\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-12T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d899045b\",\n                    \"first_name\": \"Orly\",\n                    \"last_name\": \"Winsborrow\",\n                    \"client_id\": \"P000195\",\n                    \"email\": \"owinsborrow5e@pagesperso-orange.fr\",\n                    \"phone\": \"08054587898\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-11T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d8990617\",\n                    \"first_name\": \"Ardyce\",\n                    \"last_name\": \"Yashunin\",\n                    \"client_id\": \"P000417\",\n                    \"email\": \"ayashuninbk@istockphoto.com\",\n                    \"phone\": \"08088859973\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-10-11T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d89909c3\",\n                    \"first_name\": \"Rey\",\n                    \"last_name\": \"Buddell\",\n                    \"client_id\": \"P000887\",\n                    \"email\": \"rbuddellom@linkedin.com\",\n                    \"phone\": \"08020683300\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-11T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25416321247d8990439\",\n                    \"first_name\": \"Ardeen\",\n                    \"last_name\": \"Boles\",\n                    \"client_id\": \"P000178\",\n                    \"email\": \"aboles4x@indiatimes.com\",\n                    \"phone\": \"08015464646\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-10T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d89909bd\",\n                    \"first_name\": \"Jade\",\n                    \"last_name\": \"Van Merwe\",\n                    \"client_id\": \"P000884\",\n                    \"email\": \"jvanoj@google.pl\",\n                    \"phone\": \"08019795646\",\n                    \"status\": {\n                        \"access\": \"Approved\"\n                    },\n                    \"createdAt\": \"2022-10-09T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aa25616321247d8990a45\",\n                    \"first_name\": \"Clevie\",\n                    \"last_name\": \"Nowland\",\n                    \"client_id\": \"P000952\",\n                    \"email\": \"cnowlandqf@marketwatch.com\",\n                    \"phone\": \"08025364750\",\n                    \"status\": {\n                        \"access\": \"Pending\"\n                    },\n                    \"createdAt\": \"2022-10-09T23:00:00.000Z\"\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get All Users using search query",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/api/v1/users?search=Al",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "Al"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "318"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"13e-qIi7l6x6tSTBAed8I7mhUaNNeLA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 12:33:26 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"data\": [\n        {\n            \"metadata\": {\n                \"total\": 1,\n                \"page\": 1,\n                \"limit\": 20,\n                \"pages\": 1\n            },\n            \"data\": [\n                {\n                    \"_id\": \"634aa25616321247d8990a9d\",\n                    \"first_name\": \"Al\",\n                    \"last_name\": \"Rodgerson\",\n                    \"client_id\": \"P000996\",\n                    \"email\": \"arodgersonrn@aboutads.info\",\n                    \"phone\": \"08077488751\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2022-03-31T23:00:00.000Z\"\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get All Users still using the search query",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/api/v1/users?search=P000014",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "P000014"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "321"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"141-KXcW9fJBM+FsPlXmCjlFBhfdOxA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 12:34:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"data\": [\n        {\n            \"metadata\": {\n                \"total\": 1,\n                \"page\": 1,\n                \"limit\": 20,\n                \"pages\": 1\n            },\n            \"data\": [\n                {\n                    \"_id\": \"634aa25316321247d89902f1\",\n                    \"first_name\": \"Alverta\",\n                    \"last_name\": \"Tallent\",\n                    \"client_id\": \"P000014\",\n                    \"email\": \"atallentd@seattletimes.com\",\n                    \"phone\": \"08056414767\",\n                    \"status\": {\n                        \"access\": \"Denied\"\n                    },\n                    \"createdAt\": \"2021-12-03T23:00:00.000Z\"\n                }\n            ]\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get All Users with access",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/api/v1/users?access=in-review",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "access",
+									"value": "in-review"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "4641"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1221-p+j0JR+DYtQzCHNroZtMMA7x2ZU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 13:19:21 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"data\": [\n        {\n            \"metadata\": {\n                \"total\": 245,\n                \"page\": 1,\n                \"limit\": 20,\n                \"pages\": 13\n            },\n            \"data\": [\n                {\n                    \"_id\": \"634aaeef9bea582d57ae5bcb\",\n                    \"first_name\": \"Lind\",\n                    \"last_name\": \"Bohman\",\n                    \"client_id\": \"P000277\",\n                    \"email\": \"lbohman7o@accuweather.com\",\n                    \"phone\": \"08061634526\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-13T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef09bea582d57ae5f27\",\n                    \"first_name\": \"Darrel\",\n                    \"last_name\": \"Maseres\",\n                    \"client_id\": \"P000707\",\n                    \"email\": \"dmaseresjm@unesco.org\",\n                    \"phone\": \"08019242049\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-13T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeef9bea582d57ae5b7f\",\n                    \"first_name\": \"Lynne\",\n                    \"last_name\": \"Ochterlony\",\n                    \"client_id\": \"P000239\",\n                    \"email\": \"lochterlony6m@stanford.edu\",\n                    \"phone\": \"08025885134\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeef9bea582d57ae5be7\",\n                    \"first_name\": \"Aaron\",\n                    \"last_name\": \"Durtnall\",\n                    \"client_id\": \"P000291\",\n                    \"email\": \"adurtnall82@smugmug.com\",\n                    \"phone\": \"08032271500\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-08T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeee9bea582d57ae5a63\",\n                    \"first_name\": \"Florencia\",\n                    \"last_name\": \"McCart\",\n                    \"client_id\": \"P000097\",\n                    \"email\": \"fmccart2o@bloglines.com\",\n                    \"phone\": \"08004073441\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-07T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef09bea582d57ae6073\",\n                    \"first_name\": \"Jimmy\",\n                    \"last_name\": \"Chopy\",\n                    \"client_id\": \"P000873\",\n                    \"email\": \"jchopyo8@histats.com\",\n                    \"phone\": \"08048850465\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-07T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef09bea582d57ae5e9d\",\n                    \"first_name\": \"Shermie\",\n                    \"last_name\": \"Millichap\",\n                    \"client_id\": \"P000638\",\n                    \"email\": \"smillichaphp@rediff.com\",\n                    \"phone\": \"08000144896\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-04T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef19bea582d57ae60f5\",\n                    \"first_name\": \"Rita\",\n                    \"last_name\": \"Noirel\",\n                    \"client_id\": \"P000938\",\n                    \"email\": \"rnoirelq1@craigslist.org\",\n                    \"phone\": \"08035661789\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-02T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef09bea582d57ae60a1\",\n                    \"first_name\": \"Bennett\",\n                    \"last_name\": \"Reicherz\",\n                    \"client_id\": \"P000896\",\n                    \"email\": \"breicherzov@hostgator.com\",\n                    \"phone\": \"08051640860\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-10-01T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeef9bea582d57ae5ca1\",\n                    \"first_name\": \"Dorry\",\n                    \"last_name\": \"Quilligan\",\n                    \"client_id\": \"P000384\",\n                    \"email\": \"dquilliganan@umn.edu\",\n                    \"phone\": \"08041963970\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-30T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef09bea582d57ae5ec9\",\n                    \"first_name\": \"Bobbee\",\n                    \"last_name\": \"Frances\",\n                    \"client_id\": \"P000660\",\n                    \"email\": \"bfrancesib@state.gov\",\n                    \"phone\": \"08046421674\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-30T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeee9bea582d57ae5a73\",\n                    \"first_name\": \"Hardy\",\n                    \"last_name\": \"Furmonger\",\n                    \"client_id\": \"P000105\",\n                    \"email\": \"hfurmonger2w@bloglines.com\",\n                    \"phone\": \"08048016372\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-29T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeee9bea582d57ae5aa3\",\n                    \"first_name\": \"Arel\",\n                    \"last_name\": \"Henrie\",\n                    \"client_id\": \"P000129\",\n                    \"email\": \"ahenrie3k@berkeley.edu\",\n                    \"phone\": \"08040404689\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-27T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef09bea582d57ae5ebd\",\n                    \"first_name\": \"Corbie\",\n                    \"last_name\": \"Whissell\",\n                    \"client_id\": \"P000654\",\n                    \"email\": \"cwhisselli5@adobe.com\",\n                    \"phone\": \"08062968912\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-25T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef09bea582d57ae5fb1\",\n                    \"first_name\": \"Ciel\",\n                    \"last_name\": \"Macia\",\n                    \"client_id\": \"P000776\",\n                    \"email\": \"cmacialj@bloglovin.com\",\n                    \"phone\": \"08076284684\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-24T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef19bea582d57ae6125\",\n                    \"first_name\": \"Steve\",\n                    \"last_name\": \"Easdon\",\n                    \"client_id\": \"P000962\",\n                    \"email\": \"seasdonqp@sina.com.cn\",\n                    \"phone\": \"08077953098\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-23T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeef9bea582d57ae5bb3\",\n                    \"first_name\": \"Sophie\",\n                    \"last_name\": \"De Bruyne\",\n                    \"client_id\": \"P000265\",\n                    \"email\": \"sde7c@theglobeandmail.com\",\n                    \"phone\": \"08060890059\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-22T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeee9bea582d57ae5a37\",\n                    \"first_name\": \"Rita\",\n                    \"last_name\": \"Pellant\",\n                    \"client_id\": \"P000075\",\n                    \"email\": \"rpellant22@toplist.cz\",\n                    \"phone\": \"08079376530\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-21T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaeee9bea582d57ae5a91\",\n                    \"first_name\": \"Erskine\",\n                    \"last_name\": \"Sears\",\n                    \"client_id\": \"P000120\",\n                    \"email\": \"esears3b@amazon.com\",\n                    \"phone\": \"08068246609\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-21T23:00:00.000Z\"\n                },\n                {\n                    \"_id\": \"634aaef09bea582d57ae5f39\",\n                    \"first_name\": \"Odetta\",\n                    \"last_name\": \"Collimore\",\n                    \"client_id\": \"P000716\",\n                    \"email\": \"ocollimorejv@auda.org.au\",\n                    \"phone\": \"08062074302\",\n                    \"status\": {\n                        \"access\": \"In-review\"\n                    },\n                    \"createdAt\": \"2022-09-19T23:00:00.000Z\"\n                }\n            ]\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get SIngle User",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Get SIngle User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}:{{port}}/api/v1/users/single?id=634aaeee9bea582d57ae59c9",
+							"host": [
+								"{{base_url}}"
+							],
+							"port": "{{port}}",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"single"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "634aaeee9bea582d57ae59c9"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "915"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"393-o9njYh27DIgZFCnfLyexWTcunMc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 15 Oct 2022 13:06:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status_code\": 200,\n    \"data\": {\n        \"_id\": \"634aaeee9bea582d57ae59c9\",\n        \"first_name\": \"Kimbra\",\n        \"last_name\": \"Exposito\",\n        \"accountName\": \"\",\n        \"client_id\": \"P000020\",\n        \"email\": \"kexpositoj@cbc.ca\",\n        \"phone\": \"08057364606\",\n        \"image\": \"https://res.cloudinary.com/specialman/image/upload/f_auto,fl_lossy,q_auto/v1600110269/profile_hk4zyr.png\",\n        \"role\": \"client\",\n        \"employment\": {\n            \"annual_income\": \"£94660.02\"\n        },\n        \"investment\": {\n            \"goal\": \"£39284.03\",\n            \"experience\": \"None\",\n            \"marital_status\": \"Divorced\",\n            \"next_of_kin_name\": \"Kimbra Exposito\",\n            \"next_of_kin_phone\": \"08052347444\",\n            \"next_of_kin_relationship\": \"Mother\",\n            \"next_of_kin_email\": \"kexpositoj@skyrock.com\"\n        },\n        \"document\": {\n            \"name\": \"DisParturient.avi\",\n            \"image\": \"http://dummyimage.com/216x100.png/cc0000/ffffff\"\n        },\n        \"status\": {\n            \"employment\": \"Pending\",\n            \"document\": \"Approved\",\n            \"investment\": \"Denied\",\n            \"bank\": \"In-review\",\n            \"biodata\": \"In-review\",\n            \"access\": \"In-review\"\n        },\n        \"createdAt\": \"2022-08-07T23:00:00.000Z\",\n        \"__v\": 0,\n        \"name\": \"Kimbra Exposito\"\n    }\n}"
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "port",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
