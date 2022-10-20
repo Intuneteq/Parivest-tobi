@@ -113,9 +113,9 @@ const Users = ({ userData }) => {
               <Grid className="grid">
                 <Image src={Frame} alt="Ellipse" width={40} height={40} />
                 <div>
-                  <Input clearable underlined />
+                  <Input clearable underlined placeholder="search" />
                   <p className="app__flex">
-                    <AiOutlineSearch /> <span>search</span>
+                    <AiOutlineSearch /> 
                   </p>
                 </div>
               </Grid>

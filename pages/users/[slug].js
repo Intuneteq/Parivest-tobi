@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Button, useModal, Modal, Text, Dropdown } from "@nextui-org/react";
@@ -12,6 +12,8 @@ import axios from "axios";
 const UserProfile = () => {
   const { setVisible, bindings } = useModal();
   const { status, setStatus } = useAppProvider();
+  const path = useRouter().asPath;
+  console.log(path);
   const [selectAccessValue, setSelectAccessValue] = React.useState(
     new Set(["Pending"])
   );
@@ -327,23 +329,26 @@ const UserProfile = () => {
 //   );
 
 //   const userData = res.data.data[0].data;
-//   const paths = userData.map(item => ({
-//     params: {id: item._id}
-//   }))
-//   return { paths, fallback: blocking }
+//   const paths = userData.map(item => {
+//     return {
+//       params: {slug: item._id.toString()}
+//     }
+//   })
+//   return { paths, fallback: false }
 // }
 
-// export const getStaticProps = async ({ params: { _id } }) => {
- 
+// export const getStaticProps = async (context) => {
+//     const id = context.params._id
 //   const res = await axios.get(
-//     `https://parivest-mock-api.herokuapp.com/api/v1/users/${_id}`  //bad endPoint
+//     `https://parivest-mock-api.herokuapp.com/api/v1/users/${id}`  //bad endpoint
 //   );
 
+
 //   console.log(res);
-//   // const userData = res.data.data[0].data;
+// //   // const userData = res.data.data[0].data;
 
 //   return {
-//     props: {  },
+//     props: { userData: res  },
 //   };
 // };
 
