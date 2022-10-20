@@ -4,7 +4,7 @@ const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
   const [slugParam, setSlugParam] = useState("");
-  const [status, setStatus] = useState("");
+  const [status, setStatus] = useState("Pending");
 
   return (
     <AppContext.Provider

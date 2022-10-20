@@ -11,7 +11,7 @@ import axios from "axios";
 
 const UserProfile = () => {
   const { setVisible, bindings } = useModal();
-  const { status, setStatus } = useAppProvider();
+  const { setStatus } = useAppProvider();
   const path = useRouter().asPath;
   console.log(path);
   const [selectAccessValue, setSelectAccessValue] = React.useState(

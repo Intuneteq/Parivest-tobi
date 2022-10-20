@@ -18,9 +18,11 @@ import {
 import { format } from "date-fns";
 
 import Frame from "../../public/Frame.svg";
+import { useAppProvider } from "../../context/AppProvider";
 
 const Users = ({ userData }) => {
   const [pageNumber, setPageNumber] = useState(0);
+  const { status } = useAppProvider();
 
   console.log(
     userData.data.filter((item) => {
@@ -64,8 +66,8 @@ const Users = ({ userData }) => {
               </Col>
               <Col className="app__flex">
                 <Badge enableShadow disableOutline color="success">
-                  {/* {user.status} */}
-                  status
+                  {status}
+                  {/* status */}
                 </Badge>
               </Col>
               <Col className="app__flex">
