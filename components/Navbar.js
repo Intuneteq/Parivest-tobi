@@ -16,7 +16,7 @@ const Navbar = () => {
     <div className="app__flex-2 nav__container">
       <div className="app__flex-3">
         <Image src={Logo} alt="Picture of the author" width={222} height={38} />
-        <h1>{slug ? 'UserProfile' : 'user'}</h1>
+        <h1>{slug ? "UserProfile" : "user"}</h1>
       </div>
       <div className="app__flex">
         <BiRefresh />

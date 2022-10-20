@@ -28,17 +28,12 @@ body {
 }
 
 .status-pill {
-  
-  // background: #DABC29;
-  color: #DABC29;
-
   p {
     font: 400;
     font-size: 14px;
     letter-spacing: 0.37px;
     color: var(--success-color);
   }
-  // margin: auto;
 }
 
 .btn {
@@ -279,9 +274,6 @@ nav {
   padding: 39px 39px 0;
   min-height: 100vh;
 
-  .test {
-    border: 1px solid red;
-  }
   .nextui-c-fdHeMm-iizPHCF-css {
     padding: 0;
   }
@@ -358,7 +350,6 @@ nav {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    // gap: ;
   }
 
   .nextui-c-hzQjrs {

@@ -20,15 +20,11 @@ import { format } from "date-fns";
 import Frame from "../../public/Frame.svg";
 import { useAppProvider } from "../../context/AppProvider";
 
-const Users = ({ userData }) => {
+const Users = ({ usersData }) => {
   const [pageNumber, setPageNumber] = useState(0);
   const { status } = useAppProvider();
-
-  const usersData = userData.data;
-
   const usersPerPage = 10;
   const pagesVisited = pageNumber * usersPerPage;
-
   const pageCount = Math.ceil(usersData.length / usersPerPage);
 
   const changePage = ({ selected }) => {
@@ -89,10 +85,7 @@ const Users = ({ userData }) => {
           <Card.Header>
             <Dropdown>
               <Dropdown.Button light>All</Dropdown.Button>
-              <Dropdown.Menu
-                variant="light"
-                aria-label="Actions"
-              >
+              <Dropdown.Menu variant="light" aria-label="Actions">
                 <Dropdown.Item key="new">Approved</Dropdown.Item>
                 <Dropdown.Item withDivider key="copy">
                   Pending
@@ -166,7 +159,6 @@ const Users = ({ userData }) => {
         </Grid.Container>
         <Grid.Container gap={3} className="user-data">
           {displayUsers}
-
           <Card className="pagination-card">
             <ReactPaginate
               previousLabel={"Previous"}
@@ -190,8 +182,8 @@ export async function getServerSideProps() {
   const res = await axios.get(
     "https://parivest-mock-api.herokuapp.com/api/v1/users"
   );
-  const userData = res.data.data[0];
-  return { props: { userData } };
+  const usersData = res.data.data[0].data;
+  return { props: { usersData } };
 }
 
 export default Users;
