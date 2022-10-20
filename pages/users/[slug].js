@@ -83,8 +83,8 @@ const UserProfile = () => {
   ];
 
   useEffect(() => {
-    if (statusList.some((value) => value === "Review")) setStatus("Review");
-    else if (statusList.every((value) => value === "Approved"))
+    if (statusList.some((status) => status === "Review")) setStatus("Review");
+    else if (statusList.every((status) => status === "Approved"))
       setStatus("Approved");
     else setStatus("Pending");
   }, [statusList, setStatus]);
