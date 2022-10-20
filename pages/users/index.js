@@ -64,7 +64,7 @@ const Users = ({ userData }) => {
               <Col className="app__flex phone">
                 <Text>{user.phone}</Text>
               </Col>
-              <Col className="app__flex">
+              <Col className="app__flex status-pill">
                 <Badge enableShadow disableOutline color="success">
                   {status}
                   {/* status */}

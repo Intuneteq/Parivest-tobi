@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import React, { useEffect } from "react";
+// import { useRouter } from "next/router";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Button, useModal, Modal, Text, Dropdown } from "@nextui-org/react";
@@ -7,24 +7,30 @@ import Image from "next/image";
 
 import userP from "../../public/userP.svg";
 import { useAppProvider } from "../../context/AppProvider";
-import axios from "axios";
+// import axios from "axios";
 
 const UserProfile = () => {
   const { setVisible, bindings } = useModal();
   const { setStatus } = useAppProvider();
-  const path = useRouter().asPath;
-  console.log(path);
+
+  // const path = useRouter().asPath;
+  // console.log(path);
+
   const [selectAccessValue, setSelectAccessValue] = React.useState(
     new Set(["Pending"])
   );
+
   const [selectedAccountInformationValue, setSelectedAccountInformationValue] =
     React.useState(new Set(["Pending"]));
+
   const [selectedInvestmentProfileValue, setSelectedInvestmentProfileValue] =
     React.useState(new Set(["Pending"]));
+
   const [
     selectedEmploymentInformationValue,
     setSelectedEmploymentInformationValue,
   ] = React.useState(new Set(["Pending"]));
+
   const [selectedBioInformationValue, setSelectedBioInformationValue] =
     React.useState(new Set(["Pending"]));
 
@@ -63,34 +69,26 @@ const UserProfile = () => {
     [selectedBioInformationValue]
   );
 
-
   //if 1 pending, overall status = pending
   //if all in review, overall status = review
   //if all approved, status = approved
   //if any in review and all is approved, status = review
 
-  useEffect(() => {
-    if(accessValue ==="Pending" || accountInformationValue === "Pending" || investmentProfileValue === "Pending" || employmentInformationValue === "Pending" || bioInformationValue === "Pending") {
-      console.log('status is true');
-      setStatus("Pending")
-    } else if (accessValue === "Review" && accountInformationValue === "Review" && investmentProfileValue === "Review" && employmentInformationValue === "Review" && bioInformationValue === "Review") {
-      setStatus("Review")
-    } else if (accessValue === "Approved" && accountInformationValue === "Approved" && investmentProfileValue === "Approved" && employmentInformationValue === "Approved" && bioInformationValue === "Approved") {
-      setStatus("Approved")
-    } else if (accessValue === "Review" || accountInformationValue === "Review" || investmentProfileValue === "Review" || employmentInformationValue === "Review" || bioInformationValue === "Review") {
-      setStatus("Review")
-    } else setStatus('Pending')
-
-  }, [accessValue, accountInformationValue, investmentProfileValue, employmentInformationValue, bioInformationValue, setStatus]);
-
-  console.log(
-    "accessValue",
+  const statusList = [
     accessValue,
     accountInformationValue,
     investmentProfileValue,
     employmentInformationValue,
-    bioInformationValue
-  );
+    bioInformationValue,
+  ];
+
+  useEffect(() => {
+    if (statusList.some((value) => value === "Review")) setStatus("Review");
+    else if (statusList.every((value) => value === "Approved"))
+      setStatus("Approved");
+    else setStatus("Pending");
+  }, [statusList, setStatus]);
+
 
   return (
     <main className="userProfile">
@@ -342,7 +340,6 @@ const UserProfile = () => {
 //   const res = await axios.get(
 //     `https://parivest-mock-api.herokuapp.com/api/v1/users/${id}`  //bad endpoint
 //   );
-
 
 //   console.log(res);
 // //   // const userData = res.data.data[0].data;
