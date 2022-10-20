@@ -1,11 +1,14 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { AiOutlineHome, AiOutlineUsergroupDelete } from "react-icons/ai";
 import { BiLineChart, BiWallet } from "react-icons/bi";
 import { MdOutlineSavings, MdOutlinePersonOutline } from "react-icons/md";
 import { HiOutlineKey, HiOutlineLogout } from "react-icons/hi";
 
 const Sidebar = () => {
+  const router = useRouter();
+
   const routes = [
     //listing out my sidebar links
     {
