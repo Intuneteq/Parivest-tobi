@@ -78,7 +78,7 @@ const UserProfile = () => {
       setStatus("Review")
     } else setStatus('Pending')
 
-  }, [accessValue, accountInformationValue, investmentProfileValue, employmentInformationValue, bioInformationValue]);
+  }, [accessValue, accountInformationValue, investmentProfileValue, employmentInformationValue, bioInformationValue, setStatus]);
 
   console.log(
     "accessValue",
@@ -249,7 +249,7 @@ const UserProfile = () => {
       </article>
       <article className="profile-card">
         <div>
-          <Image src={userP} />
+          <Image alt="img" src={userP} />
         </div>
         <h5>Account details</h5>
         <section className="app__flex-3">

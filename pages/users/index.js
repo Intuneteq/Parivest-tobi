@@ -18,7 +18,7 @@ import {
 
 import Frame from "../../public/Frame.svg";
 
-const users = ({ userData }) => {
+const Users = ({ userData }) => {
   const [pageNumber, setPageNumber] = useState(0);
 
   console.log(
@@ -182,4 +182,4 @@ export async function getServerSideProps() {
   return { props: { userData } };
 }
 
-export default users;
+export default Users;
