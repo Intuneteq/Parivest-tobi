@@ -7,6 +7,7 @@ import Image from "next/image";
 
 import userP from "../../public/userP.svg";
 import { useAppProvider } from "../../context/AppProvider";
+import axios from "axios";
 
 const UserProfile = () => {
   const { setVisible, bindings } = useModal();
@@ -90,7 +91,7 @@ const UserProfile = () => {
   );
 
   return (
-    <main className="UserProfile">
+    <main className="userProfile">
       <article className="app__flex-2">
         <section>
           <div className="app__flex">
@@ -180,7 +181,7 @@ const UserProfile = () => {
                   {selectedInvestmentProfileValue}
                 </Dropdown.Button>
                 <Dropdown.Menu
-                  // aria-label="Single selection actions"
+                  aria-label="Single selection actions"
                   color="#F3F6FC"
                   disallowEmptySelection
                   selectionMode="single"
@@ -203,7 +204,7 @@ const UserProfile = () => {
                   {selectedEmploymentInformationValue}
                 </Dropdown.Button>
                 <Dropdown.Menu
-                  // aria-label="Single selection actions"
+                  aria-label="Single selection actions"
                   color="#F3F6FC"
                   disallowEmptySelection
                   selectionMode="single"
@@ -319,5 +320,31 @@ const UserProfile = () => {
   );
 };
 
+// export async function getStaticPaths() {
+
+//   const res = await axios.get(
+//     "https://parivest-mock-api.herokuapp.com/api/v1/users"
+//   );
+
+//   const userData = res.data.data[0].data;
+//   const paths = userData.map(item => ({
+//     params: {id: item._id}
+//   }))
+//   return { paths, fallback: blocking }
+// }
+
+// export const getStaticProps = async ({ params: { _id } }) => {
+ 
+//   const res = await axios.get(
+//     `https://parivest-mock-api.herokuapp.com/api/v1/users/${_id}`  //bad endPoint
+//   );
+
+//   console.log(res);
+//   // const userData = res.data.data[0].data;
+
+//   return {
+//     props: {  },
+//   };
+// };
+
 export default UserProfile;
-// react-aria-1

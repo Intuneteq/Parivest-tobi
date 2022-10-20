@@ -15,6 +15,7 @@ import {
   Input,
   Badge,
 } from "@nextui-org/react";
+import { format } from "date-fns";
 
 import Frame from "../../public/Frame.svg";
 
@@ -44,21 +45,21 @@ const Users = ({ userData }) => {
         <Card className="card" key={user._id}>
           <Card.Body>
             <Row className="row">
-              <Col className="app__flex">
-                <Text>date</Text>
+              <Col className="app__flex date">
+                <Text>{format(new Date(user.createdAt), "dd MMMMMM yyyy")}</Text>
               </Col>
-              <Col className="app__flex">
+              <Col className="app__flex client-id">
                 <Text>{user.client_id}</Text>
               </Col>
-              <Col className="app__flex">
+              <Col className="app__flex name">
                 <Text>
                   {user.first_name} {user.last_name}
                 </Text>
               </Col>
-              <Col className="app__flex">
+              <Col className="app__flex email">
                 <Text>{user.email}</Text>
               </Col>
-              <Col className="app__flex">
+              <Col className="app__flex phone">
                 <Text>{user.phone}</Text>
               </Col>
               <Col className="app__flex">
@@ -126,7 +127,7 @@ const Users = ({ userData }) => {
         <Grid.Container gap={1}>
           <Card className="card">
             <Card.Body>
-              <Row className="test" justify="space-between" alignitems="center">
+              <Row justify="space-between" alignitems="center">
                 <Col className="app__flex">
                   <Text>Date joined</Text>
                 </Col>
