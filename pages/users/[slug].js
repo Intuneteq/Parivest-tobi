@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import { useRouter } from "next/router";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Button, useModal, Modal, Text, Dropdown } from "@nextui-org/react";
@@ -12,9 +11,6 @@ import { useAppProvider } from "../../context/AppProvider";
 const UserProfile = () => {
   const { setVisible, bindings } = useModal();
   const { setStatus } = useAppProvider();
-
-  // const path = useRouter().asPath;
-  // console.log(path);
 
   const [selectAccessValue, setSelectAccessValue] = React.useState(
     new Set(["Pending"])
@@ -88,7 +84,6 @@ const UserProfile = () => {
       setStatus("Approved");
     else setStatus("Pending");
   }, [statusList, setStatus]);
-
 
   return (
     <main className="userProfile">

@@ -24,11 +24,6 @@ const Users = ({ userData }) => {
   const [pageNumber, setPageNumber] = useState(0);
   const { status } = useAppProvider();
 
-  console.log(
-    userData.data.filter((item) => {
-      return item.last_name, item.first_name;
-    })
-  );
   const usersData = userData.data;
 
   const usersPerPage = 10;
@@ -48,7 +43,9 @@ const Users = ({ userData }) => {
           <Card.Body>
             <Row className="row">
               <Col className="app__flex date">
-                <Text>{format(new Date(user.createdAt), "dd MMMMMM yyyy")}</Text>
+                <Text>
+                  {format(new Date(user.createdAt), "dd MMMMMM yyyy")}
+                </Text>
               </Col>
               <Col className="app__flex client-id">
                 <Text>{user.client_id}</Text>
@@ -67,7 +64,6 @@ const Users = ({ userData }) => {
               <Col className="app__flex status-pill">
                 <Badge enableShadow disableOutline color="success">
                   {status}
-                  {/* status */}
                 </Badge>
               </Col>
               <Col className="app__flex">
@@ -93,8 +89,9 @@ const Users = ({ userData }) => {
           <Card.Header>
             <Dropdown>
               <Dropdown.Button light>All</Dropdown.Button>
-              <Dropdown.Menu variant="light" 
-              // aria-label="Actions"
+              <Dropdown.Menu
+                variant="light"
+                aria-label="Actions"
               >
                 <Dropdown.Item key="new">Approved</Dropdown.Item>
                 <Dropdown.Item withDivider key="copy">
@@ -109,15 +106,27 @@ const Users = ({ userData }) => {
           <Card.Body>
             <Grid.Container justify="space-between">
               <Grid>
-                <Input underlined width="186px" aria-label="from" label="From" type="date" />
-                <Input underlined width="186px" aria-label="To" label="To" type="date" />
+                <Input
+                  underlined
+                  width="186px"
+                  aria-label="from"
+                  label="From"
+                  type="date"
+                />
+                <Input
+                  underlined
+                  width="186px"
+                  aria-label="To"
+                  label="To"
+                  type="date"
+                />
               </Grid>
               <Grid className="grid">
                 <Image src={Frame} alt="Ellipse" width={40} height={40} />
                 <div>
                   <Input clearable underlined placeholder="search" />
                   <p className="app__flex">
-                    <AiOutlineSearch /> 
+                    <AiOutlineSearch />
                   </p>
                 </div>
               </Grid>

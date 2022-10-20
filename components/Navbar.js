@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { BiRefresh } from "react-icons/bi";
@@ -12,16 +12,15 @@ const Navbar = () => {
   const router = useRouter();
   const [displayName, setDisplayName] = useState("user");
 
-  if(router.asPath === 'users/[slug]') setDisplayName("userProfile")
+  useEffect(() => {
+    const slug = router.query.slug;
+    if (slug) setDisplayName("userProfile");
+  });
+
   return (
     <div className="app__flex-2 nav__container">
       <div className="app__flex-3">
-        <Image
-          src={Logo}
-          alt="Picture of the author"
-          width={222}
-          height={38}
-        />
+        <Image src={Logo} alt="Picture of the author" width={222} height={38} />
         <h1>{displayName}</h1>
       </div>
       <div className="app__flex">
