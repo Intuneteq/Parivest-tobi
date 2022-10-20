@@ -7,17 +7,10 @@ import { IoMdNotificationsOutline } from "react-icons/io";
 import Logo from "../public/Logo.svg";
 import Ellipse from "../public/Ellipse.svg";
 import user from "../public/user.svg";
-import {useAppProvider} from "../context/AppProvider";
 
 const Navbar = () => {
   const router = useRouter();
   const [displayName, setDisplayName] = useState("user");
-  const {slugParam} = useAppProvider();
-  // console.log('navbar', router.pathname);
-  // console.log('query', router.asPath);
-  // console.log('truthy', router.asPath == `users/${slugParam}`);
-  
-  // console.log('truthy', router.pathname === 'users/[slug]');
 
   if(router.asPath === 'users/[slug]') setDisplayName("userProfile")
   return (
@@ -28,7 +21,6 @@ const Navbar = () => {
           alt="Picture of the author"
           width={222}
           height={38}
-          //   placeholder="blur" // Optional blur-up while loading
         />
         <h1>{displayName}</h1>
       </div>
@@ -44,7 +36,7 @@ const Navbar = () => {
           <h6>Ole gunnar</h6>
           <p>Super admin</p>
         </section>
-        <Image src={user} width={45} height={45} />
+        <Image src={user} alt="img" width={45} height={45} />
       </div>
     </div>
   );

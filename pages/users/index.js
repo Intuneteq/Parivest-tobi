@@ -13,15 +13,12 @@ import {
   Dropdown,
   Grid,
   Input,
-  Spacer,
   Badge,
 } from "@nextui-org/react";
 
 import Frame from "../../public/Frame.svg";
-import { useAppProvider } from "../../context/AppProvider";
 
 const users = ({ userData }) => {
-  const { status } = useAppProvider();
   const [pageNumber, setPageNumber] = useState(0);
 
   console.log(

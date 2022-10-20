@@ -8,7 +8,7 @@ import Image from "next/image";
 import userP from "../../public/userP.svg";
 import { useAppProvider } from "../../context/AppProvider";
 
-const userProfile = () => {
+const UserProfile = () => {
   const { setVisible, bindings } = useModal();
   const { status, setStatus } = useAppProvider();
   const [selectAccessValue, setSelectAccessValue] = React.useState(
@@ -90,7 +90,7 @@ const userProfile = () => {
   );
 
   return (
-    <main className="userProfile">
+    <main className="UserProfile">
       <article className="app__flex-2">
         <section>
           <div className="app__flex">
@@ -319,5 +319,5 @@ const userProfile = () => {
   );
 };
 
-export default userProfile;
+export default UserProfile;
 // react-aria-1
