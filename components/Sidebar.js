@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { AiOutlineHome, AiOutlineUsergroupDelete } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { BiLineChart, BiWallet } from "react-icons/bi";
 import { MdOutlineSavings, MdOutlinePersonOutline } from "react-icons/md";
 import { HiOutlineKey, HiOutlineLogout } from "react-icons/hi";
+import { TbUsers } from "react-icons/tb";
 
 const Sidebar = () => {
   const router = useRouter();
@@ -22,7 +23,7 @@ const Sidebar = () => {
       route: "/users",
       name: "Users",
       detail: "/users/[slug]",
-      icon: <AiOutlineUsergroupDelete />,
+      icon: <TbUsers />,
     },
 
     {
