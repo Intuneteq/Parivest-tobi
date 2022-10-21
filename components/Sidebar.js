@@ -14,6 +14,7 @@ const Sidebar = () => {
     {
       route: "/",
       name: "Home",
+      detail: "/",
       icon: <AiOutlineHome />,
     },
 
@@ -54,7 +55,8 @@ const Sidebar = () => {
             <div
               className={
                 router.pathname === route.route ||
-                route.detail === "/users/[slug]"
+                (route.detail === `${route.route}/[slug]` &&
+                  router.pathname !== "/")
                   ? "active"
                   : "sidebar-link" //if route path matches mapped route path then let link take active classname
               }

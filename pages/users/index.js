@@ -58,7 +58,7 @@ const Users = ({ usersData }) => {
                 <Text>{user.phone}</Text>
               </Col>
               <Col className="app__flex status-pill">
-                <Badge enableShadow disableOutline color="success">
+                <Badge variant="flat" disableOutline color={status === "Pending" ? "warning" : status ==="Approved" ? "success" : "primary"}>
                   {status}
                 </Badge>
               </Col>

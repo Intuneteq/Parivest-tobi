@@ -66,7 +66,7 @@ const UserProfile = () => {
   );
 
   //if 1 pending, overall status = pending
-  //if all in review, overall status = review
+  //if all in In Review, overall status = review
   //if all approved, status = approved
   //if any in review and all is approved, status = review
 
@@ -79,7 +79,7 @@ const UserProfile = () => {
   ];
 
   useEffect(() => {
-    if (statusList.some((status) => status === "Review")) setStatus("Review");
+    if (statusList.some((status) => status === "In Review")) setStatus("In Review");
     else if (statusList.every((status) => status === "Approved"))
       setStatus("Approved");
     else setStatus("Pending");
@@ -138,7 +138,7 @@ const UserProfile = () => {
                   onSelectionChange={setSelectAccessValue}
                 >
                   <Dropdown.Item key="Pending">Pending</Dropdown.Item>
-                  <Dropdown.Item key="Review">Review</Dropdown.Item>
+                  <Dropdown.Item key="In Review">In Review</Dropdown.Item>
                   <Dropdown.Item key="Approved">Approved</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -161,7 +161,7 @@ const UserProfile = () => {
                   onSelectionChange={setSelectedAccountInformationValue}
                 >
                   <Dropdown.Item key="Pending">Pending</Dropdown.Item>
-                  <Dropdown.Item key="Review">Review</Dropdown.Item>
+                  <Dropdown.Item key="In Review">In Review</Dropdown.Item>
                   <Dropdown.Item key="Approved">Approved</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -184,7 +184,7 @@ const UserProfile = () => {
                   onSelectionChange={setSelectedInvestmentProfileValue}
                 >
                   <Dropdown.Item key="Pending">Pending</Dropdown.Item>
-                  <Dropdown.Item key="Review">Review</Dropdown.Item>
+                  <Dropdown.Item key="In Review">In Review</Dropdown.Item>
                   <Dropdown.Item key="Approved">Approved</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -207,7 +207,7 @@ const UserProfile = () => {
                   onSelectionChange={setSelectedEmploymentInformationValue}
                 >
                   <Dropdown.Item key="Pending">Pending</Dropdown.Item>
-                  <Dropdown.Item key="Review">Review</Dropdown.Item>
+                  <Dropdown.Item key="In Review">In Review</Dropdown.Item>
                   <Dropdown.Item key="Approved">Approved</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
@@ -230,7 +230,7 @@ const UserProfile = () => {
                   onSelectionChange={setSelectedBioInformationValue}
                 >
                   <Dropdown.Item key="Pending">Pending</Dropdown.Item>
-                  <Dropdown.Item key="Review">Review</Dropdown.Item>
+                  <Dropdown.Item key="In Review">In Review</Dropdown.Item>
                   <Dropdown.Item key="Approved">Approved</Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>
