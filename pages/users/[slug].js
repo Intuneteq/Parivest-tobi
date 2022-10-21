@@ -3,6 +3,7 @@ import { HiOutlineArrowLeft } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Button, useModal, Modal, Text, Dropdown } from "@nextui-org/react";
 import Image from "next/image";
+import { useRouter } from 'next/router'
 
 import userP from "../../public/userP.svg";
 import { useAppProvider } from "../../context/AppProvider";
@@ -10,6 +11,8 @@ import { useAppProvider } from "../../context/AppProvider";
 
 const UserProfile = () => {
   const { setVisible, bindings } = useModal();
+  const router = useRouter();
+  
   const { setStatus } = useAppProvider();
 
   const [selectAccessValue, setSelectAccessValue] = React.useState(
@@ -90,7 +93,7 @@ const UserProfile = () => {
       <article className="app__flex-2">
         <section>
           <div className="app__flex">
-            <HiOutlineArrowLeft />
+            <HiOutlineArrowLeft onClick={() => router.back()} />
             <p>John Doe</p>
           </div>
         </section>
